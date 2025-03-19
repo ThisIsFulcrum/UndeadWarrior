@@ -1,0 +1,31 @@
+{
+	"leather-shoes" : 12,
+	"leather-helmet" : 13,
+	"leather-torso" : 17,
+	"leather-trousers" : 14,
+	"leather-jewellery" : 20,
+	
+	"copper-shoes" : 36,
+	"copper-helmet" : 39,
+	"copper-torso" : 51,
+	"copper-trousers" : 42,
+	"copper-jewellery" : 60,
+	
+	"gold-shoes" : 108,
+	"gold-helmet" : 117,
+	"gold-torso" : 153,
+	"gold-trousers" : 126,
+	"gold-jewellery" : 180,
+	
+	"diamond-shoes" : 324,
+	"diamond-helmet" : 351,
+	"diamond-torso" : 459,
+	"diamond-trousers" : 378,
+	"diamond-jewellery" : 540,
+	
+	"dragon-shoes" : 972,
+	"dragon-helmet" : 1053,
+	"dragon-torso" : 1377,
+	"dragon-trousers" : 1134,
+	"dragon-jewellery" : 1620
+}

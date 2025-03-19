@@ -2,6 +2,8 @@ import random
 import json
 import time
 
+from Animation import animate, puzzle
+
 class Player:
 	level_stairs = [None, "leather", "copper", "gold", "diamond", "dragon"]
 	def __init__(self):
@@ -30,7 +32,7 @@ class Player:
 				return
 		lvl_indx = self.level_stairs.index(self.level)
 		self.level = self.level_stairs[lvl_indx + 1]
-		print("\n"+"@"*30, f"\nYou reached Level {self.level}!", "\n"+"@"*30+"\n")
+		animate(f"You reached Level {self.level}!", duration=3)
 		self.ask_levelup()
 
 
@@ -86,7 +88,8 @@ class Game:
 		while True:
 			input("\nDraw a random tool!")
 			rand_tool = self.box.random_gear(self.player.get_score())
-			print("You drew:", rand_tool)
+			puzzle("You drew: "+str(rand_tool), duration=0.5)
+			time.sleep(0.1)
 			print("Your tool:", self.player.gear[rand_tool._class])
 			eing = input("austauschen? [y/n]")
 			if eing == "y":
